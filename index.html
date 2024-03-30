@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+    <div style="margin: 10px;">
+        <button id="showlinear" class="btn btn-success" >Linear Search</button> 
+        <button id="showBinary" class="btn btn-warning">Binary Search</button> 
+       
+    </div>
+    
+ <div  style="display: flex; flex-direction: column; margin-top: 30px;">
+    <div id="hideLinear" style="border: 2px solid black; height: 240px; text-align: center; background: #00ffff47;">
+        <h1>Linear Search</h1>
+       
+        <div style="display:flex; flex-direction: row; justify-content: center; margin-top: 25px;">
+           <div style="margin-right: 30px;">
+               <label>Input Array</label>
+               <input type="text" id="linearInput"> <button id="linearAdd" class="btn btn-info">Add</button> 
+           </div>
+          
+          
+           <div style="margin-right: 30px;"> 
+               <label>Key</label>
+              <input type="text" id="linearKey" > <br>
+           </div>
+          
+           <div>
+               <button id="linearSearch" class="btn btn-success" >Linear Search</button>
+           </div>
+        </div>
+   
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-top: 40px;">
+           <div style="width: 100%; height: 100px; text-align: center;">
+               <p id="linearArray" style="font-size: 20px;"></p>
+               <p id="linearResult" style="font-size: 20px; color: red;"></p>
+           </div>
+          
+        </div>
+       </div>
+   
+    <div  id="hideBinary" style="border: 2px solid black; height: 240px; text-align: center; background: #00ffff47; ">
+     <h1>Binary Search</h1>
+    
+     <div style="display:flex; flex-direction: row; justify-content: center; margin-top: 25px;">
+        <div style="margin-right: 30px;">
+            <label>Input Array</label>
+            <input type="text" id="binaryInput"> <button id="binaryAdd" class="btn btn-info">Add</button> 
+        </div>
+       
+       
+        <div style="margin-right: 30px;"> 
+            <label>Key</label>
+           <input type="text" id="binaryKey" > <br>
+        </div>
+       
+        <div>
+            <button id="binarySearch" class="btn btn-success" >Binary Search</button>
+        </div>
+     </div>
+
+     <div style="display: flex; flex-direction: column; justify-content: center; margin-top: 40px;">
+        <div style="width: 100%; height: 100px; text-align: center;">
+            <p id="binaryArray" style="font-size: 20px;"></p>
+            <p id="binaryResult" style="font-size: 20px; color: red;"></p>
+        </div>
+       
+     </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
